@@ -232,13 +232,13 @@ export default function Search({ setFollowingCount }) {
       <Header />
       <div className="min-w-screen min-h-screen mx-auto pt-20">
         {/* Barra de busca */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-3">
           <form
             onSubmit={(e) => {
               e.preventDefault();
               handleSearch();
             }}
-            className="flex"
+            className="flex w-[80%] justify-center"
           >
             <input
               type="text"
