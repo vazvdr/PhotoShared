@@ -230,7 +230,7 @@ export default function Search({ setFollowingCount }) {
   return (
     <>
       <Header />
-      <div className="min-w-screen min-h-screen mx-auto pt-20 p-4">
+      <div className="min-w-screen min-h-screen mx-auto pt-20">
         {/* Barra de busca */}
         <div className="flex justify-center mb-6">
           <form
@@ -264,12 +264,12 @@ export default function Search({ setFollowingCount }) {
           columnClassName="bg-clip-padding"
         >
           {photos.map((photo) => (
-            <div key={photo.id} className="py-4">
+            <div key={photo.id} className="p-4">
               <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
                 <img
                   src={photo.urls.small}
                   alt={photo.alt_description || "photo"}
-                  className="w-full h-auto object-cover cursor-pointer"
+                  className="w-[98%] h-auto object-cover cursor-pointer"
                   onClick={() => setSelectedPhoto(photo)}
                 />
 
