@@ -114,9 +114,9 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-w-screen min-h-screen overflow-hidden">
+    <div className="bg-black relative min-w-screen min-h-screen overflow-hidden">
       {/* Fundo com imagens */}
-      <div className="w-[100%] md:w-[60%] mx-auto absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
+      <div className="w-[100%] md:w-[60%] bg-black mx-auto absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
         {images.map((src, i) => (
           <img
             key={i}
