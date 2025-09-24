@@ -114,7 +114,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-auto">
+    <div className="relative min-w-screen min-h-screen overflow-hidden">
       {/* Fundo com imagens */}
       <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
         {images.map((src, i) => (
@@ -122,7 +122,7 @@ export default function Home() {
             key={i}
             src={`${src}?auto=format&fit=crop&w=500&q=60`}
             alt={`Background ${i}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain bg-black"
           />
         ))}
       </div>
